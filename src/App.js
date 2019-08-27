@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import {TodoList} from "./TodoList"
+import {TodoApp} from "./TodoApp";
 
 class App extends React.Component {
 
@@ -11,7 +12,7 @@ class App extends React.Component {
       {text:"write TODO App", priority:3, dueDate: (new Date(2018,9,30)).toDateString() }]
 
     return (
-      <TodoList items={todos} />
+      <TodoApp />
     )
   }
 }
